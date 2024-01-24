@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #22bd49;
+}
+header {
+    text-align: center;
+    margin-bottom: 420px;
+    margin-right: -270px;
+}
+#game-board {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #3b0000;
+    background-color: #3a0202ec;
+    margin-top: 30px;
+}
+
+.snake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+#snake-head {
+    background-color: #ffffff;
+}
+
+.tail {
+    background-color: #4CAF50;
+}
+
+.food {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #f00;
+}
+.tree {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: #8B4513; /* Cor de marrom para o tronco da árvore */
+}
+
+.tree::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #008000; /* Cor verde para as folhas */
+    border-radius: 50%;
+    top: -20px;
+    left: -10px;
+}
+#score{
+    font-size: 22px;
+    font-weight: bold;
+   
+}
